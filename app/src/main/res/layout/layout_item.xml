@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="7dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="7dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="20dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF0000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toStartOf="@+id/ic_delete"
+                android:text="Delete"
+                android:textSize="30sp"></TextView>
+
+            <ImageView
+                android:id="@+id/ic_delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_delete"></ImageView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linearForeground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/img"
+                    app:shapeAppearanceOverlay="@style/circular"></com.google.android.material.imageview.ShapeableImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/LinearLayout_layout_item_horizontal">
+
+                    <TextView
+                        style="@style/TVTitle_layout_item"
+                        android:text="Họ tên : "></TextView>
+
+                    <TextView
+                        android:id="@+id/txtHotenNguoiThue"
+                        style="@style/TVContent_layout_item"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayout_layout_item_horizontal">
+
+                    <TextView
+                        style="@style/TVTitle_layout_item"
+                        android:text="Số điện thoại: "></TextView>
+
+                    <TextView
+                        android:id="@+id/txtSDTNguoiThue"
+                        style="@style/TVContent_layout_item"></TextView>
+                </LinearLayout>
+
+                <LinearLayout style="@style/LinearLayout_layout_item_horizontal">
+
+                    <TextView
+                        style="@style/TVTitle_layout_item"
+                        android:text="Password : "></TextView>
+
+                    <TextView
+                        android:id="@+id/txtPasswordNguoiThue"
+                        style="@style/TVContent_layout_item"
+                        android:inputType="textPassword"></TextView>
+                </LinearLayout>
+                <LinearLayout style="@style/LinearLayout_layout_item_horizontal"
+                    android:visibility="gone">
+
+                <TextView
+                    style="@style/TVTitle_layout_item"
+                    android:text="Confirm : "></TextView>
+
+                <TextView
+                    android:id="@+id/txtConfirmNguoiThue"
+                    style="@style/TVContent_layout_item"
+                    android:inputType="textPassword"></TextView>
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+
+</androidx.cardview.widget.CardView>

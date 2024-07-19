@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "353443589807",
+    "project_id": "crud-nguoithue-home",
+    "storage_bucket": "crud-nguoithue-home.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353443589807:android:12ef71dfb72052a83b6e5a",
+        "android_client_info": {
+          "package_name": "com.example.ltdd2_crud_nguoithue"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC41ElDFl9AJEDwaVstnuBwYadJ_D-ziPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
